@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:icon_tech_task/features/restaurant/presentation/controllers/get_map_cubit/get_map_cubit.dart';
+import 'package:icon_tech_task/features/map/presentation/controllers/get_map_cubit/get_map_cubit.dart';
 
 class LiveRoutePage extends StatelessWidget {
   const LiveRoutePage({super.key});

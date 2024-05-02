@@ -56,17 +56,17 @@ RouteResponse _$RouteResponseFromJson(Map<String, dynamic> json) =>
       bounds: json['bounds'] == null
           ? null
           : BoundsResponse.fromJson(json['bounds'] as Map<String, dynamic>),
-      overviewPolyline: json['overviewPolyline'] == null
+      overviewPolyline: json['overview_polyline'] == null
           ? null
           : PolylineResponse.fromJson(
-              json['overviewPolyline'] as Map<String, dynamic>),
+              json['overview_polyline'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$RouteResponseToJson(RouteResponse instance) =>
     <String, dynamic>{
       'legs': instance.legs,
       'bounds': instance.bounds,
-      'overviewPolyline': instance.overviewPolyline,
+      'overview_polyline': instance.overviewPolyline,
     };
 
 PolylineResponse _$PolylineResponseFromJson(Map<String, dynamic> json) =>

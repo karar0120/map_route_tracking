@@ -4,10 +4,10 @@ import 'package:icon_tech_task/core/helper/shared_preferences.dart';
 import 'package:icon_tech_task/core/networking/api_service.dart';
 import 'package:icon_tech_task/core/networking/dio_factory.dart';
 import 'package:icon_tech_task/core/networking/netwotk_info.dart';
-import 'package:icon_tech_task/features/restaurant/data/repos/irepository.dart';
-import 'package:icon_tech_task/features/restaurant/domain/repository/restaurant_repo.dart';
-import 'package:icon_tech_task/features/restaurant/domain/use_case/get_map.dart';
-import 'package:icon_tech_task/features/restaurant/presentation/controllers/get_map_cubit/get_map_cubit.dart';
+import 'package:icon_tech_task/features/map/data/repos/irepository.dart';
+import 'package:icon_tech_task/features/map/domain/repository/restaurant_repo.dart';
+import 'package:icon_tech_task/features/map/domain/use_case/get_map.dart';
+import 'package:icon_tech_task/features/map/presentation/controllers/get_map_cubit/get_map_cubit.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

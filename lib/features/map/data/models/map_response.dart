@@ -44,6 +44,7 @@ class NortheastResponse {
 class RouteResponse {
   List<LegResponse>? legs;
   BoundsResponse? bounds;
+  @JsonKey(name:'overview_polyline')
   PolylineResponse? overviewPolyline;
 
   RouteResponse({

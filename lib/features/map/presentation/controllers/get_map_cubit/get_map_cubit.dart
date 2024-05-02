@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:icon_tech_task/core/helper/constances.dart';
 import 'package:icon_tech_task/core/networking/api_constants.dart';
-import 'package:icon_tech_task/features/restaurant/data/models/map_query_params.dart';
-import 'package:icon_tech_task/features/restaurant/domain/use_case/get_map.dart';
+import 'package:icon_tech_task/features/map/data/models/map_query_params.dart';
+import 'package:icon_tech_task/features/map/domain/use_case/get_map.dart';
 
 part 'get_map_state.dart';
 
@@ -22,7 +22,6 @@ class GetMapCubit extends Cubit<GetMapState> {
   List<LatLng> routeCoordinates = [];
   String distance = '';
   String duration = '';
-
   void emitGetMapState() async {
     emit(GetMapLoading());
     final response = await getMapUseCase.execute(MapQueryParams(
@@ -35,6 +34,7 @@ class GetMapCubit extends Cubit<GetMapState> {
       routeCoordinates = decodedPoints;
       distance = restaurantBranchesResponse.routes[0].legs[0].distance.text;
       duration = restaurantBranchesResponse.routes[0].legs[0].duration.text;
+      print (restaurantBranchesResponse.routes[0].overviewPolyline.points);
       if (mapController != null) {
         mapController!.animateCamera(CameraUpdate.newLatLngBounds(
           LatLngBounds(

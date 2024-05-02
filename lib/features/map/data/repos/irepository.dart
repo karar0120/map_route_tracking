@@ -3,10 +3,10 @@ import 'package:icon_tech_task/core/networking/api_error_handler.dart';
 import 'package:icon_tech_task/core/networking/api_result.dart';
 import 'package:icon_tech_task/core/networking/api_service.dart';
 import 'package:icon_tech_task/core/networking/netwotk_info.dart';
-import 'package:icon_tech_task/features/restaurant/data/mapper/map_mapper.dart';
-import 'package:icon_tech_task/features/restaurant/data/models/map_query_params.dart';
-import 'package:icon_tech_task/features/restaurant/domain/entity/map.dart';
-import 'package:icon_tech_task/features/restaurant/domain/repository/restaurant_repo.dart';
+import 'package:icon_tech_task/features/map/data/mapper/map_mapper.dart';
+import 'package:icon_tech_task/features/map/data/models/map_query_params.dart';
+import 'package:icon_tech_task/features/map/domain/entity/map.dart';
+import 'package:icon_tech_task/features/map/domain/repository/restaurant_repo.dart';
 
 class MapRepo implements MapRepository {
   final ApiService _apiService;

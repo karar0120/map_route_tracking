@@ -1,6 +1,6 @@
 import 'package:icon_tech_task/core/helper/constances.dart';
-import 'package:icon_tech_task/features/restaurant/data/models/map_response.dart';
-import 'package:icon_tech_task/features/restaurant/domain/entity/map.dart';
+import 'package:icon_tech_task/features/map/data/models/map_response.dart';
+import 'package:icon_tech_task/features/map/domain/entity/map.dart';
 import 'package:icon_tech_task/core/helper/extensions.dart';
 
 extension MapResponseMapper on GetMapResponse? {
